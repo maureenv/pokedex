@@ -4,7 +4,8 @@
   "description": "Angular test",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "live-server": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {

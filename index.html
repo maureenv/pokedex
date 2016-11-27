@@ -1,3 +1,16 @@
-<h1> Hello! </h1>
+<html ng-app="">
+<head>
+    <title>Pokemon Angular</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
 
-<p> Another Test </p>
+<body ng-init>
+    <strong>First name:</strong> {{firstName}}<br />
+
+    <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+
+
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/angular-route.js"></script>
+</body>
+</html>
