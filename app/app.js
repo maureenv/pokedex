@@ -6,7 +6,7 @@
   app.config(function($routeProvider){
     $routeProvider
     .when('/', {
-      controller: 'PokemonController', // since controller is being passed into template through the route I no longer have to attach controller in template itself
+      controller: 'pokemonController', // since controller is being passed into template through the route I no longer have to attach controller in template itself
       templateUrl: 'app/views/pokemon.html' // to see if page is working just create a route and a view for it. Don't need controller yet
 
     })

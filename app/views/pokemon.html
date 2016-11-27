@@ -1,3 +1,7 @@
-<strong>First name:</strong> {{firstName}}<br />
 
-<label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+<table>
+<tr ng-repeat="poke in pokemon">
+        <td>{{ poke.Name }}</td>
+        <td><img ng-src="{{poke.Image}}"></td>
+</tr>
+</table>

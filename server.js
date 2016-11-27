@@ -7,47 +7,47 @@ var express = require('express'),
 
 app.use(express.static(__dirname + '/'));
 
-app.get('/pokemon/:id', function(req, res) {
-    var pokemonId = parseInt(req.params.id);
-    var data = {};
-    for (var i=0,len=pokemon.length;i<len;i++) {
-        if (pokemon[i].id === pokemonId) {
-           data = pokemon[i];
-           break;
-        }
-    }
-    res.json(data);
-});
+// app.get('/pokemon/:id', function(req, res) {
+//     var pokemonId = parseInt(req.params.id);
+//     var data = {};
+//     for (var i=0,len=pokemon.length;i<len;i++) {
+//         if (pokemon[i].id === pokemonId) {
+//            data = pokemon[i];
+//            break;
+//         }
+//     }
+//     res.json(data);
+// });
 
 app.get('/pokemon', function(req, res) {
     res.json(pokemon);
     //res.json(500, { error: 'An error has occurred!' });
 });
 
-app.get('/orders', function(req, res) {
-    var orders = [];
-    for (var i=0,len=customers.length;i<len;i++) {
-        if (customers[i].orders) {
-            for (var j=0,ordersLen=customers[i].orders.length;j<ordersLen;j++) {
-                orders.push(customers[i].orders[j]);
-            }
-        }
-    }
-    res.json(orders);
-});
-
-app.delete('/pokemon/:id', function(req, res) {
-    var pokemonId = parseInt(req.params.id);
-    var data = { status: true };
-    for (var i=0,len=pokemon.length;i<len;i++) {
-        if (pokemon[i].id === pokemonId) {
-           pokemon.splice(i,1);
-           data = { status: true };
-           break;
-        }
-    }
-    res.json(data);
-});
+// app.get('/orders', function(req, res) {
+//     var orders = [];
+//     for (var i=0,len=customers.length;i<len;i++) {
+//         if (customers[i].orders) {
+//             for (var j=0,ordersLen=customers[i].orders.length;j<ordersLen;j++) {
+//                 orders.push(customers[i].orders[j]);
+//             }
+//         }
+//     }
+//     res.json(orders);
+// });
+//
+// app.delete('/pokemon/:id', function(req, res) {
+//     var pokemonId = parseInt(req.params.id);
+//     var data = { status: true };
+//     for (var i=0,len=pokemon.length;i<len;i++) {
+//         if (pokemon[i].id === pokemonId) {
+//            pokemon.splice(i,1);
+//            data = { status: true };
+//            break;
+//         }
+//     }
+//     res.json(data);
+// });
 
 app.listen(8000);
 
@@ -59,7 +59,7 @@ var pokemon =
   "Number":"001",
   "Name":"Bulbasaur",
   "Classification":"Seed Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/001.gif",
+  "Image":"images/001.png",
   "Types":[
      "Grass",
      "Poison"
@@ -136,7 +136,7 @@ var pokemon =
   "Number":"002",
   "Name":"Ivysaur",
   "Classification":"Seed Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/002.gif",
+  "Image":"images/002.png",
   "Types":[
      "Grass",
      "Poison"
@@ -215,7 +215,7 @@ var pokemon =
   "Number":"003",
   "Name":"Venusaur",
   "Classification":"Seed Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/003.gif",
+  "Image":"images/003.png",
   "Types":[
      "Grass",
      "Poison"
@@ -288,7 +288,7 @@ var pokemon =
   "Number":"004",
   "Name":"Charmander",
   "Classification":"Lizard Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/004.gif",
+  "Image":"images/004.png",
   "Types":[
      "Fire"
   ],
@@ -364,7 +364,7 @@ var pokemon =
   "Number":"005",
   "Name":"Charmeleon",
   "Classification":"Flame Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/005.gif",
+  "Image":"images/005.png",
   "Types":[
      "Fire"
   ],
@@ -442,7 +442,7 @@ var pokemon =
   "Number":"006",
   "Name":"Charizard",
   "Classification":"Flame Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/006.gif",
+  "Image":"images/006.png",
   "Types":[
      "Fire",
      "Flying"
@@ -515,7 +515,7 @@ var pokemon =
   "Number":"007",
   "Name":"Squirtle",
   "Classification":"Tiny Turtle Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/007.gif",
+  "Image":"images/007.png",
   "Types":[
      "Water"
   ],
@@ -588,7 +588,7 @@ var pokemon =
   "Number":"008",
   "Name":"Wartortle",
   "Classification":"Turtle Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/008.gif",
+  "Image":"images/008.png",
   "Types":[
      "Water"
   ],
@@ -668,7 +668,7 @@ var pokemon =
   "Number":"009",
   "Name":"Blastoise",
   "Classification":"Shellfish Pokèmon",
-  "Image":"http://serebii.net/pokedex-dp/icon/009.gif",
+  "Image":"images/009.png",
   "Types":[
      "Water"
   ],
@@ -742,7 +742,7 @@ var pokemon =
 "Number":"025",
 "Name":"Pikachu",
 "Classification":"Mouse Pokèmon",
-"Image":"http://serebii.net/pokedex-dp/icon/025.gif",
+"Image":"images/025.png",
 "Types":[
   "Electric"
 ],
@@ -809,7 +809,7 @@ var pokemon =
 "Number":"026",
 "Name":"Raichu",
 "Classification":"Mouse Pokèmon",
-"Image":"http://serebii.net/pokedex-dp/icon/026.gif",
+"Image":"images/026.png",
 "Types":[
   "Electric"
 ],
