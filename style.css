@@ -5,12 +5,9 @@
 
 body {
   background-color: gray;
-  //font-family: pokemon;
+  font-family: pokemon;
 }
 
 td {
-  font-size: 14px;
-  border: 1px solid black;
-  width: 100px;
-  padding: 10px;
+  font-size: 12px;
 }

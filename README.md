@@ -1,5 +1,5 @@
 # pokedex
-Angular test, after installing make sure to do npm install to get all the dependencies in package.json
+Angular test
 
 #Promise http://andyshora.com/promises-angularjs-explained-as-cartoon.html
 

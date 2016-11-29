@@ -1,14 +1,6 @@
 <table>
-<tr>
-	<!-- <th> Image </th> -->
-	<th> Name </th>
-	<th> Weakness </th>
-</tr>
 <tr ng-repeat="poke in pokemon">
-	<!-- <td><img ng-src="{{poke.Image}}"></td> -->
-	<td>{{poke.Number}} {{ poke.Name }}</td>
-	<td>
-  		<p ng-repeat="weakness in poke.Weaknesses"> {{weakness}} </p>
-  	</td>
+  <td><img ng-src="{{poke.Image}}"></td>
+  <td>{{poke.Number}} {{ poke.Name }}</td>
 </tr>
 </table>
