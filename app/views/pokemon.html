@@ -1,7 +1,6 @@
-
 <table>
 <tr ng-repeat="poke in pokemon">
-        <td>{{ poke.Name }}</td>
-        <td><img ng-src="{{poke.Image}}"></td>
+  <td><img ng-src="{{poke.Image}}"></td>
+  <td>{{poke.Number}} {{ poke.Name }}</td>
 </tr>
 </table>

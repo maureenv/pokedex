@@ -1,7 +1,4 @@
 // do npm install express then do node server.js since express is installed in server.js. To view json data go to http://localhost:8000/pokemon to view all customers or /orders for orders. This is because express is using app.get for thos categories
-
-
-
 var express = require('express'),
     app = express();
 
